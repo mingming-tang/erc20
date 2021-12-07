@@ -1,21 +1,8 @@
 {
   "canisters": {
     "erc20": {
-      "main": "src/erc20/main.mo",
+      "main": "src/examples/erc20.mo",
       "type": "motoko"
-    },
-    "erc20_assets": {
-      "dependencies": [
-        "erc20"
-      ],
-      "frontend": {
-        "entrypoint": "src/erc20_assets/src/index.html"
-      },
-      "source": [
-        "src/erc20_assets/assets",
-        "dist/erc20_assets/"
-      ],
-      "type": "assets"
     }
   },
   "defaults": {
@@ -24,7 +11,7 @@
       "packtool": ""
     }
   },
-  "dfx": "0.8.1",
+  "dfx": "0.8.3",
   "networks": {
     "local": {
       "bind": "127.0.0.1:8000",
